@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th</title>
+    <style>
+        .image-container {
+            position: relative;
+            padding: 10rem 0;
+            /* text-align: center; */
+        }
+        img{
+            max-width: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h6>4th exercice</h6>
+        <ol>
+            <li>You are an adult now. Create the file <code>7.js</code>, add it at the end of the <code>body</code> and set up a new Vue application without my help</li>
+            <li>Create a variable in the <code>data</code> named <code>filippo</code>, it will be an object:
+<code><pre>
+    filippo: {
+        left: 0,
+        top: 0,
+    }
+</pre></code>
+</li>
+            <li>Connect, using the <code>v-model</code> the <code>input</code> of the x axes with the <code>filippo.left</code> variable. It's an object remember!</li>
+            <li>Do the same with the top</li>
+            <li>Connect the <code>:style</code> attribute with filippo's left and right properties</li>
+            <li>Add the functionaliteis of the 5th exercise, so the <code>Start</code> and <code>stop</code> buttons with the relative <code>setInterval</code> and <code>clearInterval</code> options</li>
+        </ol>
+    </div>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">X axes</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="">Y axes</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="image-container">
+                <img
+                :style="{
+                    left: filippoLeft+'px',
+                }" 
+                src="filippo.png"
+                alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</body>
+</html>
