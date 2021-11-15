@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <ol>
+            <li>This app generates a secret random number, in the file <code>5.js</code> you will find the app already setted up</li>
+            <li>The user needs to guess it, you must create a button that reads the value inputed by the user</li>
+            <li>Under the input, print "The secret number is higher" or "the secret number is lower" or "you get the secret Number" when you get it</li>
+            <li>Save all the guessing of the user into an array named <code>oldGuessing</code>, and print it  in the HTML (no need to use v-for for the moment) </li>
+        </ol>
+        <center>
+            <label>Guess the number</label>
+            <input type="number" v-model="guess">
+        </center>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="5.js"></script>
+</body>
+</html>

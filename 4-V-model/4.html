@@ -38,11 +38,12 @@
         </ol>
     </div>
     <div id="app" class="container">
+        <h1>{{filippo.left}}</h1>
         <div class="row">
             <div class="col">
                 <div class="form-group">
                     <label for="">X axes</label>
-                    <input type="text" class="form-control">
+                    <input type="number" v-model="filippo.left" class="form-control">
                 </div>
             </div>
             <div class="col">
@@ -54,7 +55,7 @@
             <div class="image-container">
                 <img
                 :style="{
-                    left: filippoLeft+'px',
+                    left: (filippo.left * 10)+'px',
                 }" 
                 src="filippo.png"
                 alt="">
@@ -62,6 +63,6 @@
         </div>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
-
+    <script src="4.js"></script>
 </body>
 </html>
